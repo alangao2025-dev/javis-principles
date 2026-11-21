@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>司徒智能工作助手（Javis）｜产品原则 P-v4</title>
+<title>司徒智能工作助手（Javis）｜产品原则 P-v5</title>
 <style>
 :root{
   --ink:#1f2937;--muted:#6b7280;--line:#e5e7eb;--bg:#f7f7f5;--card:#fff;
@@ -37,7 +37,7 @@ li{margin:3px 0}
 .traits{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:10px 0}
 .trait{border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:14px}
 .trait b{display:block;color:var(--p2)}
-.bases{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:10px 0}
+.bases{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:10px 0}
 .base{background:#f0fdfa;border-radius:10px;padding:14px;font-size:14px}
 .base b{display:block;color:var(--p3);font-size:16px;margin-bottom:4px}
 .cols{display:grid;grid-template-columns:1fr 1fr;gap:14px}
@@ -68,7 +68,7 @@ footer{text-align:center;color:var(--muted);font-size:13px;margin-top:36px}
 <body>
 <header>
   <div class="wrap">
-    <span class="tag">PRODUCT PRINCIPLES · P-v4 · 2026-11-20</span>
+    <span class="tag">PRODUCT PRINCIPLES · P-v5 · 2026-11-20</span>
     <h1>司徒智能工作助手 产品原则<small>简称：司徒　｜　英文名：Javis（暂定）</small></h1>
     <p class="lead">这五条原则是司徒所有产品要求的出发点。每一条产品要求都必须能回到某条原则上找到依据。</p>
   </div>
@@ -87,7 +87,7 @@ footer{text-align:center;color:var(--muted);font-size:13px;margin-top:36px}
   <div class="overview">
     <div class="ov" style="border-color:var(--p1)"><b>P1 为谁</b>事情多、一人多岗、极度追求效率</div>
     <div class="ov" style="border-color:var(--p2)"><b>P2 做成什么</b>一位像真人一样的助理；先提效、再长认知，用户始终主导</div>
-    <div class="ov" style="border-color:var(--p3)"><b>P3 靠什么</b>资料 · 用户画像 · 业务地图</div>
+    <div class="ov" style="border-color:var(--p3)"><b>P3 靠什么</b>资料 · 用户画像 · 决策链 · 业务地图</div>
     <div class="ov" style="border-color:var(--p4)"><b>P4 守什么</b>只忠于用户</div>
     <div class="ov" style="border-color:var(--p5)"><b>P5 至少做到</b>少写提示词、少改交付物</div>
   </div>
@@ -125,7 +125,7 @@ footer{text-align:center;color:var(--muted);font-size:13px;margin-top:36px}
       <ul><li>方向、取舍和最终结论由用户决定；</li><li>用户随时知道司徒在做什么、依据是什么；</li><li>用户可以随时叫停、改方向或否决。</li></ul>
       <b>两点澄清：</b>
       <ul><li>让用户主导，不等于司徒降低能力。司徒始终全力交付，用户的主导体现在决策权和掌控感上。</li>
-      <li>用户主导的是工作项，不是司徒的内部记忆，所以和 P3 的“画像不可手动修改”不冲突。</li></ul></div>
+      <li>用户主导的是工作项，不是司徒的内部记忆，所以和 P3 的“画像、决策链不可手动修改”不冲突。</li></ul></div>
     <h3>对标</h3>
     <p>对标 WorkBuddy、DeepSeek harness 一类产品，但给个人的服务体验要远远强于它们。</p>
     <h3>助理和高级助理</h3>
@@ -133,19 +133,20 @@ footer{text-align:center;color:var(--muted);font-size:13px;margin-top:36px}
   </section>
 
   <section class="p" id="p3" style="border-color:var(--p3)">
-    <h2><span class="no" style="background:var(--p3)">P3</span>三个核心基础</h2>
-    <p class="essence">司徒“懂用户”只靠三样东西：资料、用户画像、业务地图。</p>
+    <h2><span class="no" style="background:var(--p3)">P3</span>四个核心基础</h2>
+    <p class="essence">司徒“懂用户”只靠四样东西：资料、用户画像、决策链、业务地图。</p>
     <div class="bases">
       <div class="base"><b>资料</b>用户授权的任何格式的资料。用户现有的文件是最重要的资产。
         <ul><li>文字：理解内容</li><li>图片：理解内容，并转成文字描述</li><li>视频：理解要求待定</li></ul></div>
-      <div class="base"><b>用户画像</b>从用户的使用行为中归纳出的<b style="display:inline;font-size:14px">习惯</b>和<b style="display:inline;font-size:14px">决策逻辑</b>，回答“这个人是谁、怎么做事、怎么做判断”。</div>
+      <div class="base"><b>用户画像</b>从用户的使用行为中归纳出的习惯，回答“这个人是谁、怎么做事”。</div>
+      <div class="base"><b>决策链</b>从用户授权的资料和使用行为中归纳出用户怎样做判断、怎样取舍，回答“这个人怎么做决定”。它只用来更懂用户，不替用户做决定。</div>
       <div class="base"><b>业务地图</b>从授权资料中归纳出的业务对象和它们之间的关系，回答“这个人在做哪些事、和谁做”。</div>
     </div>
-    <h3>画像和业务地图归谁管</h3>
+    <h3>画像、决策链和业务地图归谁管</h3>
     <table>
-      <tr><th>知情</th><td>用户有知情权：司徒必须告诉用户，它在形成和使用画像与业务地图。</td></tr>
-      <tr><th>修改</th><td>用户不能手动直接修改画像或业务地图。</td></tr>
-      <tr><th>更新</th><td>司徒在服务过程中，依据用户的行为、习惯和资料持续更新画像和业务地图。用户只是正常使用，不需要专门维护。</td></tr>
+      <tr><th>知情</th><td>用户有知情权：司徒必须告诉用户，它在形成和使用画像、决策链和业务地图。</td></tr>
+      <tr><th>修改</th><td>用户不能手动直接修改画像、决策链或业务地图。</td></tr>
+      <tr><th>更新</th><td>司徒在服务过程中，依据用户的行为、习惯和资料持续更新画像、决策链和业务地图。用户只是正常使用，不需要专门维护。</td></tr>
     </table>
   </section>
 
@@ -181,7 +182,7 @@ footer{text-align:center;color:var(--muted);font-size:13px;margin-top:36px}
     <h2><span class="no" style="background:var(--p5)">P5</span>能力底线</h2>
     <p class="essence">无论哪个版本、哪一档助理，至少都要做到下面两点。</p>
     <ul>
-      <li><b>少写提示词</b>：靠用户画像和业务地图补足背景和要求，用户一句话就能说清要什么。</li>
+      <li><b>少写提示词</b>：靠用户画像、决策链和业务地图补足背景和要求，用户一句话就能说清要什么。</li>
       <li><b>用用户自己的文档做模板</b>：用户授权的现有文档就是模板，交付物的格式、结构和写法都和它保持一致。这是底线，不是可选项。</li>
     </ul>
     <h3>要解决的两个市场通病</h3>
@@ -201,8 +202,8 @@ footer{text-align:center;color:var(--muted);font-size:13px;margin-top:36px}
   </div>
 
   <footer>
-    司徒智能工作助手（Javis）· 产品原则 P-v4 · 2026-11-20<br>
-    变更记录：P-v1 初版 → P-v2 命名、专业技能、决策逻辑、图片/视频、远端边界、模板底线 → P-v4 忠诚的对象和范围、手机入口、团队共享、画像知情权、区分原则与实现
+    司徒智能工作助手（Javis）· 产品原则 P-v5 · 2026-11-20<br>
+    变更记录：P-v1 初版 → P-v2 命名、专业技能、决策逻辑、图片/视频、远端边界、模板底线 → P-v3 忠诚的对象和范围、手机入口、团队共享、画像知情权、区分原则与实现 → P-v4 先提效、再长认知，用户始终主导；主导不降低交付能力 → P-v5 决策链从用户画像中独立，成为第四个核心基础
   </footer>
 </div>
 </body>
