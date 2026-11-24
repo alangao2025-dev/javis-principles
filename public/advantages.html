@@ -1,0 +1,60 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Javis 两个核心优势：怎么让用户有共鸣</title><style>
+*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif;color:#1f2937;background:#f7f7f5;line-height:1.75}
+.top{background:linear-gradient(135deg,#111827,#1e3a8a);color:#fff;padding:14px 20px;position:sticky;top:0;z-index:5;display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.top b{font-size:15px} .top a{color:#bfdbfe;font-size:13px;text-decoration:none}
+.layout{display:flex;max-width:1240px;margin:0 auto;gap:24px;padding:20px}
+nav{flex:0 0 220px;position:sticky;top:70px;align-self:flex-start;display:flex;flex-direction:column;gap:4px;font-size:13px}
+nav a{color:#334155;text-decoration:none;padding:4px 10px;border-radius:6px} nav a:hover{background:#e2e8f0}
+main{flex:1;min-width:0;background:#fff;border-radius:14px;padding:28px 36px;box-shadow:0 1px 3px rgba(0,0,0,.05)}
+h1{font-size:28px;margin:0 0 10px;color:#111827} h2{font-size:21px;margin:36px 0 12px;padding-left:10px;border-left:5px solid #1e3a8a}
+h3{font-size:17px;margin:24px 0 8px;color:#1e3a8a} blockquote{margin:0 0 16px;background:#eff6ff;border-radius:8px;padding:10px 16px;color:#334155;font-size:14px}
+.tw{overflow-x:auto;margin:10px 0} table{border-collapse:collapse;width:100%;font-size:14px} th,td{border:1px solid #e5e7eb;padding:8px 10px;text-align:left;vertical-align:top} th{background:#f1f5f9}
+ul,ol{padding-left:22px;margin:6px 0} li{margin:3px 0} pre{background:#f8fafc;border-radius:8px;padding:12px;font-size:13px;overflow-x:auto}
+@media(max-width:900px){nav{display:none} main{padding:20px}}
+</style></head><body>
+<div class="top"><b>Javis 产品设计</b><a href="/">产品原则</a><a href="/design">设计共识 · 第一轮（L0）</a><a href="/discuss-l1">第二轮讨论稿</a><a href="/advantages">两个核心优势</a></div>
+<div class="layout"><nav><a href='#h0'>0. 结论（一句话）</a><a href='#h1'>1. 为什么要讨论：五个维度打动不了用户</a><a href='#h2'>2. 目标用户的共同经历</a><a href='#h3'>3. 核心优势一：懂你</a><a href='#h4'>4. 核心优势二：懂你的人帮你查</a><a href='#h5'>5. 两个优势和五个维度的对应</a><a href='#h6'>6. 宣传口径的约束</a><a href='#h7'>7. 对设计的影响</a><a href='#h8'>8. 还没查清的事</a><a href='#h9'>9. 主要来源</a></nav><main><h1 id='h0'>Javis 两个核心优势：怎么让用户有共鸣</h1>
+<blockquote>司徒智能工作助手（简称司徒，英文名 Javis）｜对应产品原则 <b>P-v10 的 P6</b>｜讨论日期 2026-11-23｜状态：<b>已确认</b><br>本页记录两个核心优势的讨论过程、求证结果和结论。原则只写“要达到什么”，见原则页 P6。</blockquote>
+<h2 id='h0'>0. 结论（一句话）</h2>
+<p><b>一开口就懂你，而且一直懂；你要的信息，它替你查好、查准，查一次就会。</b></p>
+<ul><li>“懂你”是主轴，是产品的灵魂；</li><li>“懂你的人帮你查”是“懂你”最容易被感受到、最容易演示的场景。</li></ul>
+<h2 id='h1'>1. 为什么要讨论：五个维度打动不了用户</h2>
+<ul><li>我们从“懂用户”“像人一样”出发，设计了五个维度：0 门槛、SMART 交互、少提示词、高情商回复、高交付质量。</li><li>对一般用户，特别是对 AI 只有初步经验的用户来说，这五个维度像是在“讲故事”：听起来不错，但没有共鸣，<b>隔靴搔痒</b>。</li><li>所以对外宣传要找用户<b>亲身经历过的痛点</b>作为支点，让用户自己联想到实际的好处。千人千面，每个人联想到的好处不同，但支点是共同的。</li><li><b>五个维度保留为内部的设计框架</b>，对外讲两个支点。</li></ul>
+<h2 id='h2'>2. 目标用户的共同经历</h2>
+<p>用户都用过 AI 产品，对 LLM 有初步的使用经验，也知道联网查资料是一件费时费力的事。</p>
+<h2 id='h3'>3. 核心优势一：懂你</h2>
+<h3 id='h4'>3.1 最初的想法（产品方提出）</h3>
+<p>用户在网页版或轻度使用 AI Agent 时（单一会话、单一工作项），通常会经历三个阶段：</p>
+<ol><li>开始时，LLM 不了解我；</li><li>聊了一段时间后（初稿里写的是“上下文用到 20% 以后”），回复和交付物明显变好：更准确、更符合我的标准、更明白我的意图，暂时称为“<b>黄金期</b>”；</li><li>用到后期（初稿里写的是“上下文用到 80% 以后，特别是压缩过一次之后”），LLM 开始混乱、乱联想，甚至编造，比如在报告里编造参考文献。</li></ol>
+<p>这些问题正是司徒依靠四个核心基础要解决的，由司徒负责管理和 LLM 的对话。这样介绍，用户能直接明白“懂你”是什么意思。</p>
+<h3 id='h4'>3.2 求证结果（2026-11 联网求证）</h3>
+<div class='tw'><table><tr><th>说法</th><th>证据</th><th>结论</th></tr><tr><td>后期会混乱</td><td>Anthropic 官方承认，上下文中的内容越多，模型准确回忆信息的能力越差，而且所有模型都有这个问题。Chroma 测了 18 个模型；Lost in the Middle、NoLiMa 等研究的结论也一样</td><td>✅ 成立</td></tr><tr><td>压缩后会丢细节</td><td>Anthropic 官方：压缩过度会丢掉一些当时看不出重要、后来才发现关键的细节</td><td>✅ 成立</td></tr><tr><td>会编造参考文献</td><td>研究发现 GPT-4 编造了 18% 的引用（GPT-3.5 是 55%）；法庭认定的 AI 幻觉案例已有 2,334 起；德勤给澳大利亚政府的报告因编造来源部分退款</td><td>✅ 成立</td></tr><tr><td>20% 后进入黄金期，80% 后变差</td><td><b>没有任何来源支持</b>。研究都说衰减“不均匀、因情境而异”；NoLiMa 显示，在 128K 窗口中只用到 32K（约 25%）时，13 个模型里有 11 个已经掉到短文本时一半以下的水平</td><td>❌ 不能用</td></tr><tr><td>一开始不懂我</td><td>原因是<b>缺少背景，不是用量的比例</b>。微软和 Salesforce 2025 年的研究：同样的信息一次性给全，表现能达到 95%；分散在多轮里给，平均下降 39%</td><td>✅ 成立，但要换一个解释</td></tr><tr><td>普通用户知道“上下文”“token”吗</td><td>没有找到任何调查数据</td><td>不能假设用户懂</td></tr></table></div>
+<h3 id='h4'>3.3 调整一：不用百分比，讲用户的亲身感受</h3>
+<ul><li>目标用户不一定懂“上下文”；写一个没有出处的数字，也违反我们自己“不编造”的原则。</li><li>改为讲用户亲身经历过的过程：<b>“刚开始它不懂你；聊了半天才懂；再聊下去它又糊涂了，还开始编。”</b></li></ul>
+<h3 id='h4'>3.4 调整二：补上最痛的一点，“换个新对话，又要从头讲”</h3>
+<p>对用过 AI 的人来说，最常见的经历是：好不容易聊懂了，第二天开个新对话，又要从头讲。完整的故事有三段：</p>
+<div class='tw'><table><tr><th>用户的经历</th><th>司徒要做到</th></tr><tr><td>开头：它不懂你，要讲半天背景</td><td><b>一开口就在黄金期</b>：背景由核心基础提前准备好</td></tr><tr><td>后面：聊久了糊涂、乱联想、编造</td><td><b>一直保持在黄金期</b>：司徒管理对话，每件事只带精准、相关的背景</td></tr><tr><td>换个新对话：又从头开始</td><td><b>越用越懂</b>：懂你的部分长期保留，下次接着用</td></tr></table></div>
+<p>一句话：<b>别的 AI 要聊半天才懂你，聊久了又糊涂；司徒一开口就懂你，而且一直懂。</b></p>
+<h3 id='h4'>3.5 调整三：竞品已有“记忆”，差异点要说硬</h3>
+<ul><li><b>现状</b>：<ul><li>ChatGPT 从 2025 年起会参考全部历史对话，还能连接文件和 Gmail；</li><li>Gemini 能连接 Gmail 和相册；</li><li>Claude 和 Microsoft Copilot 也都有记忆。</li><li>用户可能会问：“ChatGPT 不是也记得我吗？”</li></ul></li><li><b>司徒的三个差异</b>：<ol><li><b>来源不同</b>：它们主要从聊天中记住你；司徒从你<b>全部授权的资料</b>中理解你，包括本地文件、钉钉和 WPS。你不用先“聊”，它就懂。</li><li><b>有结构的理解，不是一堆零散的记忆</b>：业务地图知道“你在做什么事、和谁做”，决策链知道“你怎么想”。Gemini 官方承认存在“过度个性化、把无关的话题联系起来”的问题，这正是用户说的“乱联想”。</li><li><b>忠诚和透明</b>：你可以看到它懂你什么；凭证不离开你的电脑；绝不发给第三方的人。</li></ol></li><li><b>不过度承诺</b>：司徒底层还是 LLM，不能说“永远不会胡说”。能说的是：“每个事实都有出处，点开就能核对；不知道就说不知道。”</li></ul>
+<h3 id='h4'>3.6 设计上要补的一项能力：会话管理</h3>
+<ul><li>L0 只有“工作项上下文”，它只管存什么，不管上下文的质量。</li><li>建议在<b>基础产品能力</b>中新增“会话管理”：<ul><li>每个工作项从核心基础中只取精准、相关的背景；</li><li>长时间的工作项自动整理，不让上下文衰减；</li><li>跨对话时，懂你的部分不丢失；</li><li>用户完全感觉不到这个过程（符合 0 门槛）。</li></ul></li><li>原则（P6）只写“要达到什么”；会话管理的具体做法留到实现阶段。</li></ul>
+<h2 id='h4'>4. 核心优势二：懂你的人帮你查</h2>
+<h3 id='h5'>4.1 最初的想法（产品方提出）</h3>
+<p>用搜索引擎或大模型查信息，只要做过类似的工作，都知道有多费时费力。所以“高效的信息查询”（Skill + 爬虫服务）也有一个支点，用户能联想到实际工作中的好处。</p>
+<h3 id='h5'>4.2 求证结果</h3>
+<ul><li><b>“费时”成立，但常被引用的数字不能用</b>：麦肯锡那个“将近 20% 的工作时间在找信息”，原文说的是<b>找公司内部信息</b>，而且是 2012 年的估算。</li><li><b>有证据的痛点</b>：</li></ul>
+<div class='tw'><table><tr><th>痛点</th><th>证据</th></tr><tr><td>慢</td><td>OpenAI Deep Research 官方说明，一次研究要 5–30 分钟</td></tr><tr><td>不可信，要核对</td><td>CJR（2025）测了 8 款 AI 搜索，超过 60% 的回答是错的；EBU 和 BBC（2025）测试发现，45% 的 AI 回答至少有一个严重问题；Reuters Institute 的调查显示，看到 AI 答案的人里只有一半信任它，多数人把它当作“先过一遍，再去核对”</td></tr><tr><td>每次都要重来</td><td>没有调研数据，但逻辑上成立</td></tr><tr><td>中文站点、公众号搜不到</td><td><b>没有找到证据</b>，要先实测才能对外说</td></tr></table></div>
+<h3 id='h5'>4.3 调整四：“查得快”单独拿出来不够硬，要和“懂你”绑在一起</h3>
+<ul><li>ChatGPT 和 Perplexity 都已经有深度研究，也有定时任务，可以定期跟踪、变化时通知。单讲“查得快”，用户会觉得“这不就是深度研究吗”。</li><li>司徒的真正优势是<b>懂你的人帮你查</b>：<ul><li>知道你为什么查、要什么口径、去哪些信源查；</li><li>查到的结果直接接上你的业务，比如竞品调价了，直接对照你的报价单指出影响；</li><li><b>查一次就会</b>：同样的事下次不用再交代，需要的话还可以定期跟踪。</li></ul></li><li>对外说法：<b>“又快又准地查到，每条都能核对；查一次就会，下次不用再交代。”</b></li></ul>
+<h2 id='h5'>5. 两个优势和五个维度的对应</h2>
+<div class='tw'><table><tr><th>对外的支点</th><th>对应的维度（内部设计框架）</th></tr><tr><td>懂你：一开口就懂，一直懂，越用越懂</td><td>少提示词（说半句就懂）、高情商回复（说话合拍）、SMART 交互（为我一个人设计）、高交付质量中的“像本人”“越用越好”</td></tr><tr><td>懂你的人帮你查：快、准、可核对、查一次就会</td><td>高交付质量中的“可靠”“完整”，加上少提示词（不用再交代）</td></tr><tr><td>两者共同的前提：放心</td><td>0 门槛（信任贯穿全程）、道德围栏</td></tr></table></div>
+<h2 id='h6'>6. 宣传口径的约束</h2>
+<ol><li>只讲用户亲身经历过的痛点，不讲内部的设计术语。</li><li><b>不写没有出处的数字</b>，比如 20%、80%。</li><li>没有实测的不说，比如“中文信源覆盖更好”。</li><li>不承诺“永远不出错”，承诺“有出处、可核对、不知道就说不知道”。</li><li>引用外部数据时，注明来源和年份，并确认原文说的就是这个意思（比如麦肯锡的数字说的是内部信息）。</li></ol>
+<h2 id='h7'>7. 对设计的影响</h2>
+<div class='tw'><table><tr><th>改动</th><th>位置</th><th>状态</th></tr><tr><td>原则新增 P6“两个核心优势”；P5 增加通病三“聊久了变糊涂，换个对话又要从头讲”</td><td>产品原则 P-v10</td><td>✅ 已完成</td></tr><tr><td>新增一层“对外价值主张”（两个支点），五个维度保留为内部设计框架</td><td>L0 第 2、3 节</td><td>⏳ 待修订 L0 文档</td></tr><tr><td>核心优势一从“机制”（实时全文检索）改为“结果”（一开口就懂你，而且一直懂）；机制作为支撑：全部授权资料 + 四个核心基础 + 会话管理</td><td>L0 第 2 节</td><td>⏳ 待修订</td></tr><tr><td>核心优势二改为“懂你的人帮你查”</td><td>L0 第 2 节</td><td>⏳ 待修订</td></tr><tr><td>基础产品能力新增“会话管理”</td><td>L0 第 3 节</td><td>⏳ 待修订</td></tr></table></div>
+<h2 id='h8'>8. 还没查清的事</h2>
+<ul><li>国产 AI（Kimi、豆包、元宝）的长期记忆功能，需要在 App 里实际看一下。</li><li>“中文信源覆盖差”没有找到测评，需要我们自己实测。</li><li>国内 AI 深度研究的耗时和定时功能。</li><li>关键数字来自子代理读到的原文，没有逐条人工核对。</li></ul>
+<h2 id='h9'>9. 主要来源</h2>
+<ul><li>Anthropic，Effective context engineering for AI agents（2025-09）：anthropic.com/engineering/effective-context-engineering-for-ai-agents</li><li>Laban 等，LLMs Get Lost in Multi-Turn Conversation（2025）：arxiv.org/abs/2505.06120</li><li>Modarressi 等，NoLiMa（2025）：arxiv.org/abs/2502.05167</li><li>Chroma，Context Rot（2025-07）：trychroma.com/research/context-rot</li><li>Liu 等，Lost in the Middle（2023）：arxiv.org/abs/2307.03172</li><li>Walters &amp; Wilder，Scientific Reports（2023）：nature.com/articles/s41598-023-41032-5</li><li>OpenAI，Introducing deep research（2025-02）：openai.com/index/introducing-deep-research</li><li>CJR Tow Center，AI 搜索引用测试（2025-03）：cjr.org/tow_center/we-compared-eight-ai-search-engines-theyre-all-bad-at-citing-news.php</li><li>EBU 和 BBC，AI 助手新闻准确性研究（2025-10）：bbc.co.uk/mediacentre/2025/new-ebu-research-ai-assistants-news-content</li><li>Reuters Institute，Generative AI and News Report（2025）</li><li>OpenAI，Tasks in ChatGPT：help.openai.com/en/articles/10291617-tasks-in-chatgpt</li><li>Google Gemini Personal Intelligence（2026-01）；ChatGPT Memory（2025-04）</li></ul></main></div></body></html>

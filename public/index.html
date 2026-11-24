@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>司徒智能工作助手（Javis）｜产品原则 P-v9</title>
+<title>司徒智能工作助手（Javis）｜产品原则 P-v10</title>
 <style>
 :root{
   --ink:#1f2937;--muted:#6b7280;--line:#e5e7eb;--bg:#f7f7f5;--card:#fff;
-  --p1:#2563eb;--p2:#7c3aed;--p3:#0d9488;--p4:#dc2626;--p5:#d97706;
+  --p1:#2563eb;--p2:#7c3aed;--p3:#0d9488;--p4:#dc2626;--p5:#d97706;--p6:#be185d;
 }
 *{box-sizing:border-box}
 body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif;color:var(--ink);background:var(--bg);line-height:1.75}
@@ -24,7 +24,7 @@ h1 small{display:block;font-size:16px;font-weight:400;opacity:.8;margin-top:6px}
 nav{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 28px}
 nav a{text-decoration:none;font-size:14px;padding:6px 14px;border-radius:99px;background:#fff;border:1px solid var(--line);color:var(--ink)}
 nav a:hover{border-color:#9ca3af}
-.overview{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-bottom:36px}
+.overview{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:36px}
 .ov{background:#fff;border-radius:10px;padding:14px;border-top:4px solid;font-size:13px;color:var(--muted)}
 .ov b{display:block;font-size:15px;color:var(--ink);margin-bottom:4px}
 section.p{background:var(--card);border-radius:14px;padding:26px 28px;margin-bottom:22px;border-left:6px solid;box-shadow:0 1px 3px rgba(0,0,0,.04)}
@@ -68,9 +68,9 @@ footer{text-align:center;color:var(--muted);font-size:13px;margin-top:36px}
 <body>
 <header>
   <div class="wrap">
-    <span class="tag">PRODUCT PRINCIPLES · P-v9 · 2026-11-20</span>
+    <span class="tag">PRODUCT PRINCIPLES · P-v10 · 2026-11-23</span>
     <h1>司徒智能工作助手 产品原则<small>简称：司徒　｜　英文名：Javis（暂定）</small></h1>
-    <p class="lead">这五条原则是司徒所有产品要求的出发点。每一条产品要求都必须能回到某条原则上找到依据。</p>
+    <p class="lead">这六条原则是司徒所有产品要求的出发点。每一条产品要求都必须能回到某条原则上找到依据。</p>
   </div>
 </header>
 
@@ -81,7 +81,7 @@ footer{text-align:center;color:var(--muted);font-size:13px;margin-top:36px}
 
 <div class="wrap">
   <nav>
-    <a href="#p1">P1 目标用户</a><a href="#p2">P2 产品目的</a><a href="#p3">P3 核心基础</a><a href="#p4">P4 道德围栏</a><a href="#p5">P5 能力底线</a><a href="#later">待实现阶段讨论</a><a href="/design" style="background:#1e3a8a;color:#fff">→ 设计共识 · 第一轮（L0）</a><a href="/discuss-l1" style="background:#1e3a8a;color:#fff">→ 第二轮讨论稿</a>
+    <a href="#p1">P1 目标用户</a><a href="#p2">P2 产品目的</a><a href="#p3">P3 核心基础</a><a href="#p4">P4 道德围栏</a><a href="#p5">P5 能力底线</a><a href="#p6">P6 两个核心优势</a><a href="#later">待实现阶段讨论</a><a href="/design" style="background:#1e3a8a;color:#fff">→ 设计共识 · 第一轮（L0）</a><a href="/discuss-l1" style="background:#1e3a8a;color:#fff">→ 第二轮讨论稿</a><a href="/advantages" style="background:#be185d;color:#fff">→ 两个核心优势（详细说明）</a>
   </nav>
 
   <div class="overview">
@@ -89,7 +89,8 @@ footer{text-align:center;color:var(--muted);font-size:13px;margin-top:36px}
     <div class="ov" style="border-color:var(--p2)"><b>P2 做成什么</b>一位像真人一样的助理；先提效、再长认知，用户始终主导</div>
     <div class="ov" style="border-color:var(--p3)"><b>P3 靠什么</b>资料 · 用户画像 · 决策链 · 业务地图</div>
     <div class="ov" style="border-color:var(--p4)"><b>P4 守什么</b>只忠于用户</div>
-    <div class="ov" style="border-color:var(--p5)"><b>P5 至少做到</b>少写提示词、少改交付物</div>
+    <div class="ov" style="border-color:var(--p5)"><b>P5 至少做到</b>少写提示词、少改交付物、聊久了不糊涂</div>
+    <div class="ov" style="border-color:var(--p6)"><b>P6 用户为什么选它</b>一开口就懂你，而且一直懂；懂你的人帮你查</div>
   </div>
 
   <section class="p" id="p1" style="border-color:var(--p1)">
@@ -185,16 +186,30 @@ footer{text-align:center;color:var(--muted);font-size:13px;margin-top:36px}
 
   <section class="p" id="p5" style="border-color:var(--p5)">
     <h2><span class="no" style="background:var(--p5)">P5</span>能力底线</h2>
-    <p class="essence">无论哪个版本、哪一档助理，至少都要做到下面两点。</p>
+    <p class="essence">无论哪个版本、哪一档助理，至少都要做到下面两点，并解决三个市场通病。</p>
     <ul>
       <li><b>少写提示词</b>：靠用户画像、决策链和业务地图补足背景和要求，用户一句话就能说清要什么。</li>
       <li><b>用用户自己的文档做模板</b>：用户授权的现有文档就是模板，交付物的格式、结构和写法都和它保持一致。这是底线，不是可选项。</li>
     </ul>
-    <h3>要解决的两个市场通病</h3>
+    <h3>要解决的三个市场通病</h3>
     <div class="pain">
       <div><b>通病一</b>：提示词要用户修正很多轮，才能得到想要的结果。</div>
       <div><b>通病二</b>：LLM 的交付物要用户手动调整很多次，才能拿去用。</div>
+      <div><b>通病三</b>：聊久了就变糊涂，开始乱联想、编造；换个对话，又要从头讲一遍背景。</div>
     </div>
+  </section>
+
+  <section class="p" id="p6" style="border-color:var(--p6)">
+    <h2><span class="no" style="background:var(--p6)">P6</span>两个核心优势：让用户有共鸣的支点</h2>
+    <p class="essence">五个体验维度是内部的设计框架。对用户，要用他亲身经历过的痛点来说明价值，让他自己联想到好处。</p>
+    <div class="cols">
+      <div class="box" style="background:#fdf2f8"><h4 style="color:var(--p6)">优势一：懂你 —— 一开口就懂你，而且一直懂</h4>
+        <ul><li>不用先聊半天，一开始就懂：来自用户全部授权的资料和四个核心基础，不只来自聊天；</li><li>再长的工作也不变糊涂、不乱联想、不编造；</li><li>换个对话、隔天再来，接着懂，越用越懂；</li><li>用户不需要管理对话，不用重复交代背景。</li></ul></div>
+      <div class="box" style="background:#fdf2f8"><h4 style="color:var(--p6)">优势二：懂你的人帮你查</h4>
+        <ul><li>快：大幅缩短收集外部信息的时间；</li><li>准：每条信息都有出处，可以核对；</li><li>查一次就会：同类的事不用再交代，需要时可以定期跟踪；</li><li>查到的结果直接接上用户的业务。</li></ul></div>
+    </div>
+    <div class="note"><b>两者的关系：</b>“懂你”是主轴；“懂你的人帮你查”是最容易被感受到的场景。<br><b>对外说法同样守“不编造”：</b>不写没有出处的数字；没有实测的不说；不承诺“永远不出错”，承诺“有出处、可核对、不知道就说不知道”。</div>
+    <p style="margin-top:14px"><a href="/advantages">→ 查看详细说明：用户的经历、求证结果、和竞品的差异、宣传口径</a></p>
   </section>
 
   <div class="later" id="later">
@@ -202,13 +217,13 @@ footer{text-align:center;color:var(--muted);font-size:13px;margin-top:36px}
     <p style="margin:0 0 10px;color:var(--muted);font-size:14px">下面这些都是“怎么做”，不属于原则，到产品要求和实现阶段再讨论。</p>
     <div class="chips">
       <span>手机端获取原文件的中转方式</span><span>脱敏</span><span>联网搜索时如何守住围栏</span>
-      <span>写、改、删文件的规则</span><span>知情权的告知方式</span><span>具体模型选型</span><span>视频理解要求</span>
+      <span>写、改、删文件的规则</span><span>知情权的告知方式</span><span>具体模型选型</span><span>视频理解要求</span><span>会话管理的具体方式</span>
     </div>
   </div>
 
   <footer>
-    司徒智能工作助手（Javis）· 产品原则 P-v9 · 2026-11-20<br>
-    变更记录：P-v1 初版 → P-v2 命名、专业技能、决策逻辑、图片/视频、远端边界、模板底线 → P-v3 忠诚的对象和范围、手机入口、团队共享、画像知情权、区分原则与实现 → P-v4 先提效、再长认知，用户始终主导；主导不降低交付能力 → P-v9 决策链从用户画像中独立，成为第四个核心基础 → P-v9 P2 增加“高情商”的解读 → P-v9 P2 修改“认知”：主动帮用户理解自己的业务；不以教用户用 AI 为目的，而是按用户当下对 AI 的认知水平来服务 → P-v9 P3 扩大决策链的范围：工作类型的决策链 → P-v9 资料增加业务系统数据和交付物；P4 扩展到业务系统，增加凭证条款和人工服务条款
+    司徒智能工作助手（Javis）· 产品原则 P-v10 · 2026-11-23<br>
+    变更记录：P-v1 初版 → P-v2 命名、专业技能、决策逻辑、图片/视频、远端边界、模板底线 → P-v3 忠诚的对象和范围、手机入口、团队共享、画像知情权、区分原则与实现 → P-v4 先提效、再长认知，用户始终主导；主导不降低交付能力 → P-v5 决策链从用户画像中独立，成为第四个核心基础 → P-v6 P2 增加“高情商”的解读 → P-v7 P2 修改“认知”：主动帮用户理解自己的业务；不以教用户用 AI 为目的，而是按用户当下对 AI 的认知水平来服务 → P-v8 P3 扩大决策链的范围：工作类型的决策链 → P-v9 资料增加业务系统数据和交付物；P4 扩展到业务系统，增加凭证条款和人工服务条款 → P-v10 新增 P6 两个核心优势（懂你；懂你的人帮你查）；P5 增加通病三：聊久了变糊涂，换个对话又要从头讲
   </footer>
 </div>
 </body>
